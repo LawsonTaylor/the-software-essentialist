@@ -18,6 +18,12 @@ describe("fizzbuzz", () => {
         expect(fizzbuzz(3)).toBe("Fizz");
         expect(fizzbuzz(6)).toBe("Fizz");
         expect(fizzbuzz(9)).toBe("Fizz");
-    })
+    });
+
+    it("should return the number as a string for inputs that are not a multiple of 3 or 5", () => {
+        expect(fizzbuzz(1)).toBe("1");
+        expect(fizzbuzz(2)).toBe("2");
+        expect(fizzbuzz(4)).toBe("4");
+    });
 
 });
